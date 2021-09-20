@@ -28,17 +28,17 @@
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link active">
-                        <use xlink:href="index.html"></use>Home
+                        Home
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link text-white">
-                        <use xlink:href="about.html"></use>About
+                        About
                     </a>
                 </li>
                 <li>
                     <a href="contact.html" class="nav-link text-white">
-                        <use xlink:href="contact.html"></use>Contact
+                        Contact
                     </a>
                 </li>
             </ul>
@@ -48,26 +48,27 @@
         <!-- Invoice Body -->
         <div class="page-wrapper">
             <div class="page">
+                <h1>Invoice</h1>
                 <div class="row">
-                    <div class="col-6 justify-content-left">
-                        <img src="assets/images/canvas-background.jpg" height="200px" width="200px">
+                    <div class="col-6 align-left">
+                        <img src="assets/images/canvas-background.jpg" height="158px" width="322px">
                     </div>
-                    <div class="col-6 justify-content-right">
-                        <h1>Invoice</h1>
-                        <textarea name="my-address" cols="40" rows="5"></textarea>
+                    <div class="col-6 align-right">
+                        <textarea name="my-address" class="textarea-align-right" cols="50" rows="8" placeholder="Add YOUR business contact details"></textarea>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8 d-flex justify-content-left">
+                    <div class="col-8 align-left">
                         <p>
-                            <h3>Bill to:</h3>
+                            <h5>Bill to:</h5>
                         </p>
-                        <p><textarea name="client-address" cols="3" rows="5"></textarea></p>
+                        <p><textarea name="client-address" cols="50" rows="5" placeholder="Add CLIENT business contact details"></textarea></p>
                     </div>
-                    <div class="col-4 d-flex justify-content-right">
-                        <p>Invoice #: <input type="text" name="invoice-number" size="8"></p>
-                        <p>Issue Date: <input type="text" name="issue-date" size="8"></p>
-                        <p>Due Date: <input type="text" name="due-date" size="8"></p>
+                    <div class="col-4 align-right" style="display: table-cell; vertical-align: middle;">
+                        <br>
+                        <p><strong>Invoice #: </strong><input type="text" name="invoice-number" size="8"></p>
+                        <p><strong>Issue Date: </strong><input type="text" name="issue-date" size="8"></p>
+                        <p><strong>Due Date: </strong><input type="text" name="due-date" size="8"></p>
                     </div>
                 </div>
 
@@ -75,60 +76,53 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <table class="item-table-class" id="item-table-id">
+                        <table class="item-table-class align-left" id="item-table-id">
                             <thead>
                                 <tr>
-                                    <th>Product/Service</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Amount</th>
+                                    <th>Product/Service: <input type="button" id="appendRow" value="+" class="row-buttons"/><input type="button" id="removeRow"
+                                        value="--" class="row-buttons"/></th>
+                                    <th>Price:</th>
+                                    <th>Quantity:</th>
+                                    <th>Amount:</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="text" name="item-des" size="50"></td>
+                                    <td><input type="text" name="item-des" size="80"></td>
                                     <td><input type="text" name="item-price" class="price-input" size="8"></td>
-                                    <td><input type="text" name="item-quant" class="quant-input" size="5" value="1">
+                                    <td><input type="text" name="item-quant" class="quant-input" size="8" value="1">
                                     </td>
                                     <td class="amount-result"></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="item-des" size="50"></td>
+                                    <td><input type="text" name="item-des" size="80"></td>
                                     <td><input type="text" name="item-price" class="price-input" size="8"></td>
-                                    <td><input type="text" name="item-quant" class="quant-input" size="5" value="1">
+                                    <td><input type="text" name="item-quant" class="quant-input" size="8" value="1">
                                     </td>
                                     <td class="amount-result"></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <input type="button" id="appendRow" value="Add" class="btn btn-outline-primary btn-sm m-2"/><input type="button" id="removeRow"
-                            value="Remove" class="btn btn-outline-primary btn-sm m-2"/>
-
                     </div>
                 </div>
 
                 <hr class="block-divider-trans">
 
                 <div class="row ">
-                    <div class="col-12">
-                        <table class="balance">
-                            <tr>
-                                <th>Balance Due:</th>
-                                <td id="balance"> </td>
-                            </tr>
-                        </table>
+                    <div class="col-12 align-right">
+                                <p><h5>Balance Due: <span id="balance"></span></h5></p>
                     </div>
                 </div>
 
                 <hr class="block-divider">
                 <div class="row">
-                    <div class="col-5">
-                        <h5>Please make payment to:</h5>
-                        <textarea name="bank-details" cols="30" rows="5"></textarea>
+                    <div class="col-5 align-left">
+                        <p><h5>Please make payment to:</h5></p>
+                        <textarea name="bank-details" cols="50" rows="8" placeholder="Bank name, sort code and account number or IBAN"></textarea>
                     </div>
-                    <div class="col-7">
-                        <h5>Additional Notes:</h5>
-                        <textarea name="addtional" cols="30" rows="5"></textarea>
+                    <div class="col-7 align-right">
+                        <p><h5>Additional Notes:</h5></p>
+                        <textarea name="addtional" cols="50" rows="8" class="textarea-align-right"></textarea>
                     </div>
                 </div>
             </div>

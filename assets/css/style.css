@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 main {
     display: flex;
@@ -15,7 +16,6 @@ body {
     /* background-color:royalblue; */
     background-image: url("https://source.unsplash.com/random/1920x1080");
 }
-
 
 .custom-sidebar {
     min-height: 100vh;
@@ -54,23 +54,20 @@ body {
     box-shadow: 1px 10px 8px 1px black;
     text-align: center;
     position: relative;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-.invoice-myaddress {
-    text-align: right;
-}
+::placeholder {
+    color: lightgrey;
+    font-size: small;
+    font-style: italic;
+  }
 
-.invoice-clientaddress {
-    text-align: left;
-}
-
-.invoice-number-date {
-    text-align: left;
-}
-
-.inline {
-    display: inline-block;
-}
+.textarea-align-right {
+      text-align: right;
+  }
 
 .align-left {
     text-align: left;
@@ -82,22 +79,23 @@ body {
 }
 
 .block-divider {
-    width: 19cm;
+    width: 18cm;
     height: 3px;
     border: 1;
     background-color: black;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .block-divider-trans {
     width: 3px;
     height: 1px;
     border: 0;
     background-color: transparent;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .item-table-class {
@@ -117,4 +115,19 @@ textarea {
     border-width: 1px;
     border-color: lightgrey;
     resize: none;
+}
+
+th {
+    font-weight: bold;
+}
+
+.row-buttons {
+    border: 0;
+    margin-left: 10px;
+    background-color: white;
+}
+
+h5 {
+    margin: 0px 0px 0px 0px;
+    line-height: 0px;
 }
