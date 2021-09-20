@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    z-index: 0;
+}
+
+body {
+    /* background-color:royalblue; */
+    background-image: url("https://source.unsplash.com/random/1920x1080");
+}
+
+
+.custom-sidebar {
+    min-height: 100vh;
+    position: absolute;
+    
+}
+
+.simploice-logo {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+}
+
+.logo-space {
+    padding: 0.2em;
+}
+  
+.page-wrapper {
+    margin-left: 35%;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 21cm;
+    height: 29.7cm;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1px 10px 8px 1px black;
+    text-align: center;
+    position: relative;
+}
+
+.invoice-myaddress {
+    text-align: right;
+}
+
+.invoice-clientaddress {
+    text-align: left;
+}
+
+.invoice-number-date {
+    text-align: left;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+    
+}
+
+.block-divider {
+    width: 19cm;
+    height: 3px;
+    border: 1;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block-divider-trans {
+    width: 3px;
+    height: 1px;
+    border: 0;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-table-class {
+    width: 100%;
+}
+
+input {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+textarea {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightgrey;
+    resize: none;
+}
