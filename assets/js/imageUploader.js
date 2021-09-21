@@ -7,16 +7,16 @@ $(document).ready(function() {
 
             reader.onload = function (e) {
                 $('.business-logo').attr('src', e.target.result);
-            }
+            };
     
             reader.readAsDataURL(input.files[0]);
         }
-    }
+    };
     
 
     $(".file-upload").on('change', function(){
         readURL(this);
-        $(".upload-button").remove()
+        $(".upload-button").remove();
     });
     
     $(".upload-button").on('click', function() {

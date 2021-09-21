@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-  // Multiply item price by quanitity and print result upon price field keyup
-  $(document.body).on("keyup", ".price-input, quant-input", function () {
+  // Multiply item price by quanitity and print result upon price and quantity field keyup
+  $(document.body).on("keyup", ".price-input, .quant-input", function () {
     let quant = $(this).closest("tr").find(".quant-input").get(0).value;
     $(this).closest("tr").find(".amount-result").html(this.value * quant);
   });
@@ -60,10 +60,10 @@ $(document).ready(function () {
   // Delete last row on invoice
   $("#removeRow").click(function () {
     $("#item-table-id tr:last").remove();
-    return fireAmount()
+    return fireAmount();
   });
 });
 
 function removeBorder() {
-  $("p").removeClass( ".border" )
+  $("p").removeClass( ".border" );
 }

@@ -1,6 +1,6 @@
 # Simploice - Simple Free Invoicing
 
-Simploice was created as a simple way to create and save or print invoices for small businesses or sole traders without the need for expensive comprehensive subcription based software.
+Simploice was created as a simple way to create and save or print invoices for small businesses and sole traders without the need for expensive comprehensive subcription based software or services, and with a more inuitive editing approach than using a MS Word template.
 
 
 ![Landing Page Background Image](assets/images/lee-house-mixing-low-res.jpg)
@@ -13,19 +13,19 @@ Simploice was created as a simple way to create and save or print invoices for s
 
 ## Features 
 
-I wanted this website to just offer a simple invoice design with built-in calculations to assist with cost totalling and invoice printing.
+I wanted this website to just offer a simple invoice design with built-in calculations to assist with cost totalling and invoice saving and printing.
 
 ### Features Left to Implement
 
 - Add an 'About' and 'Contact' page so users can understand the reason for the service and also get in touch to offer development suggestions.
 - Create a customer login account with the ability to save and recall invoices.
 - Use Bootstap to create a dynamic layout for mobile; since the idea of this site is to present an invoice design on an A4 sheet of paper, the dynamic layout would need to be completely changed from an A4 fixed layout to a long and narrow list of fields that can later be printed to the A4 page layout.
-- Remove 15 row item limit and create multy page invoice.
+- Remove 15 row item limit and create multi-page invoice.
 - Add ability to e-mail invoice straight to client from invoice page.
 
 ## Testing 
 
-Chrome was used to created the design but this site has also been test successfully on Safari and Firefox. Chrome dev tools were used to test the site and chase and monitor the javascript code to fix bugs.
+Chrome was used to create this website and it is only currently functioning as should on Chrome. Safari and Firefox have been tested but have layout indescrepencies and issues with some of the javascript code; cross-browser compatibility will be developed in the future. Chrome dev tools were used to test the site and chase and monitor the javascript code to fix bugs.
 
 
 ### Validator Testing 
@@ -37,6 +37,8 @@ Chrome was used to created the design but this site has also been test successfu
 - CSS - [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwinterheartlee.github.io%2Fleehousemixing2021%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   - No errors were found when passing through the official W3C Jigsaw validator.
   ![Landing Page Background Image](assets/images/css-test.png)
+- Javascript - [Jshint](https://jshint.com/) 
+  - No serious issues were detected when passed through the Jshint validator.
 
 ### Unfixed Bugs
 
