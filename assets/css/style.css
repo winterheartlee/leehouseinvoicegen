@@ -15,6 +15,10 @@ main {
 body {
     /* background-color:royalblue; */
     background-image: url("https://source.unsplash.com/random/1920x1080");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
 }
 
 .custom-sidebar {
@@ -100,6 +104,7 @@ body {
 
 .item-table-class {
     width: 100%;
+    font-size: 11px;
 }
 
 input {
@@ -107,6 +112,16 @@ input {
     border-radius: 5px;
     border-width: 1px;
     border-color: lightgrey;
+}
+
+.date-input {
+    width: 6rem;
+}
+
+/* stop calendar icon from taking up too much white space */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 textarea {
@@ -130,4 +145,34 @@ th {
 h5 {
     margin: 0px 0px 0px 0px;
     line-height: 0px;
+}
+
+h6 {
+    margin: 0px 0px 0px 0px;
+    line-height: 0px;
+}
+
+.business-logo {
+    max-width: 322px;
+    max-height: 158px;
+    display: block;
+}
+
+.file-upload {
+    display: none;
+}
+
+.upload-button {
+    padding: 4px;
+    border: 1px solid black;
+    background-color: rgb(92, 118, 233);
+    color: white;
+    border-radius: 5px;
+    display: block;
+    float: left;
+}
+
+.dimensions {
+    font-style: italic;
+    font-size: x-small;
 }
