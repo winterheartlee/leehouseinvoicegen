@@ -1,9 +1,15 @@
 $(document).ready(function () {
 
-  // Multiply item price by quanitity and print result upon price and quantity field keyup
-  $(document.body).on("keyup", ".price-input, .quant-input", function () {
+  // Multiply item price by quanitity and print result upon price field keyup
+  $(document.body).on("keyup", ".price-input", function () {
     let quant = $(this).closest("tr").find(".quant-input").get(0).value;
     $(this).closest("tr").find(".amount-result").html(this.value * quant);
+  });
+
+  // Multiply item price by quanitity and print result upon quantity field keyup
+  $(document.body).on("keyup", ".quant-input", function () {
+    let price = $(this).closest("tr").find(".price-input").get(0).value;
+    $(this).closest("tr").find(".amount-result").html(this.value * price);
   });
 
   // Add together all individual item prices to create pre-tax amount total
@@ -65,5 +71,5 @@ $(document).ready(function () {
 });
 
 function removeBorder() {
-  $("p").removeClass( ".border" );
+  $("p").removeClass(".border");
 }

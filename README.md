@@ -1,9 +1,9 @@
 # Simploice - Simple Free Invoicing
 
-Simploice was created as a simple way to create and save or print invoices for small businesses and sole traders without the need for expensive comprehensive subcription based software or services, and with a more inuitive editing approach than using a MS Word template.
+Simploice was created as a simple way to create and save or print invoices for small businesses and sole traders without the need for expensive comprehensive subcription based software or services, and with a more intuitive editing approach than using a MS Word template.
 
 
-![Landing Page Background Image](assets/images/lee-house-mixing-low-res.jpg)
+![Generated Invoice Example](assets/images/invoice-example.png)
 
 ## Wireframe:
 - Wireframe was created using Balsamiq.
@@ -25,7 +25,7 @@ I wanted this website to just offer a simple invoice design with built-in calcul
 
 ## Testing 
 
-Chrome was used to create this website and it is only currently functioning as should on Chrome. Safari and Firefox have been tested but have layout indescrepencies and issues with some of the javascript code; cross-browser compatibility will be developed in the future. Chrome dev tools were used to test the site and chase and monitor the javascript code to fix bugs.
+Chrome was used to create this website and it is only currently functioning as should on Chrome. Safari and Firefox have been tested but have slight layout indescrepencies with the textarea tag widths; cross-browser compatibility will be improved in the future. Chrome dev tools were used to test the site and chase and monitor the javascript code to fix bugs.
 
 
 ### Validator Testing 
