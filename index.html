@@ -54,7 +54,7 @@
                 <h1>Invoice</h1>
                 <div class="row">
                     <div class="col-6 align-left">
-                        <img class="business-logo">
+                        <img src="assets/images/white-box.png" alt="User Business Logo" class="business-logo">
                         <div class="upload-button"><p>Upload Image:</p>
                             <p class="dimensions">Max Width 322px & Max Height 155px</p></div>
                         <input class="file-upload" type="file" accept="image/*" />
@@ -66,9 +66,7 @@
                 </div>
                 <div class="row">
                     <div class="col-8 align-left">
-                        <p>
-                            <h5>Bill to:</h5>
-                        </p>
+                        <p><h5>Bill to:</h5></p>
                         <p><textarea name="client-address" cols="50" rows="5"
                                 placeholder="Add CLIENT business contact details"></textarea></p>
                     </div>
@@ -122,28 +120,20 @@
                         <p>
                             <h6>Amount Total: £<span id="balance"></span></h6>
                         </p>
-                        <p>
-                            <h6>Tax(%): <input type="text" id="tax" size="4" value="20"></h6>
-                        </p>
-                        <p>
-                            <h5>Grand Total: £<span id="grand-total"></span></h5>
-                        </p>
+                        <p><h6>Tax(%): <input type="text" id="tax" size="4" value="20"></h6></p>
+                        <p><h5>Grand Total: £<span id="grand-total"></span></h5></p>
                     </div>
                 </div>
 
                 <hr class="block-divider">
                 <div class="row">
                     <div class="col-5 align-left">
-                        <p>
-                            <h5>Please make payment to:</h5>
-                        </p>
+                        <p><h5>Please make payment to:</h5></p>
                         <textarea name="bank-details" cols="50" rows="7"
                             placeholder="Bank name, sort code and account number or IBAN"></textarea>
                     </div>
                     <div class="col-7 align-right">
-                        <p>
-                            <h5>Additional Notes:</h5>
-                        </p>
+                        <p><h5>Additional Notes:</h5></p>
                         <textarea name="addtional" cols="50" rows="7" class="textarea-align-right"></textarea>
                     </div>
                 </div>
@@ -157,9 +147,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/invoiceFunctions.js"></script>
-    <script type="text/javascript" src="assets/js/imageUploader.js"></script>
-    <script type="text/javascript" src="assets/js/printPage.js"></script>
+    <script src="assets/js/invoiceFunctions.js"></script>
+    <script src="assets/js/imageUploader.js"></script>
+    <script src="assets/js/printPage.js"></script>
 </body>
 
 </html>

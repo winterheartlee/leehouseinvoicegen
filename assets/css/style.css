@@ -95,7 +95,7 @@ body {
 .block-divider {
     width: 18cm;
     height: 3px;
-    border: 1;
+    border: 1px;
     background-color: black;
     margin-top: 10px;
     margin-bottom: 10px;
