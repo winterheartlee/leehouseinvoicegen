@@ -7,9 +7,9 @@ Simploice was created as a simple way to create and save or print invoices for s
 
 ## Wireframe:
 - Wireframe was created using Balsamiq.
-- [View full wireframe here](assets/images/wireframe.png)
+- [View full wireframe here](assets/images/simploice-wireframe.png)
 
-![Wireframe Preview](assets/images/wireframe-preview.png)
+![Wireframe Preview](assets/images/simploice-wireframe-preview.png)
 
 ## Features 
 
@@ -30,20 +30,17 @@ Chrome was used to create this website and it is only currently functioning as s
 
 ### Validator Testing 
 
-- HTML - [W3C Validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fwinterheartlee.github.io%2Fleehousemixing2021%2Findex.html)
-  - On the initial test, the validator did not like the embedded iframe code which contained obselete styling form HTML4 e.g frameborder. To overcome this issue I removed all the obselete iframe code and added a CSS class for styling the iframe width, height and border.
-  ![Landing Page Background Image](assets/images/html-test.png)
+- HTML - [W3C Validator](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwinterheartlee.github.io%2Fleehouseinvoicegen%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=)
   - The site currently has no errors from the W3C Validator.
-- CSS - [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwinterheartlee.github.io%2Fleehousemixing2021%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- CSS - [Jigsaw Validator](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwinterheartlee.github.io%2Fleehouseinvoicegen%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=)
   - No errors were found when passing through the official W3C Jigsaw validator.
-  ![Landing Page Background Image](assets/images/css-test.png)
 - Javascript - [Jshint](https://jshint.com/) 
   - No serious issues were detected when passed through the Jshint validator.
 
 ### Unfixed Bugs
 
 - Once an image has been added to the logo area, the 'upload' button is removed so that it does not show on the printed invoice, however there is no way to then change the image without refreshing.
-- The 'Amount' and 'Grand Total' calculations can sometimes display as long float numbers with very long decimal places; I tried to force the results to always display to a double float, however I was unsuccessful at this time.
+- The 'Amount' and 'Grand Total' calculations can sometimes display as long float numbers with very long decimal places; I tried to force the results to always display to a double float using <b>parseFloat().toFixed(2)</b>, however I was unable to successfully implement it to prevent long float numbers.
 - The first item/product of the invoice list does not trigger the calculation for 'Amount' and 'Grand Total' until the second row received a KeyUp.
 
 
