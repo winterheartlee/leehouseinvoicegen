@@ -31,7 +31,7 @@
                         Home
                     </a>
                 </li>
-<!-- Navigation to be developed
+                <!-- Navigation to be developed
                 <li class="nav-item">
                     <a href="about.html" class="nav-link text-white">
                         About
@@ -49,14 +49,18 @@
 
         <!-- Invoice Body -->
         <div class="page-wrapper">
-            <input type="button" value="Print" onClick="printJS({ printable: 'print-area', type: 'html', targetStyles: ['*']})" class="btn btn-primary btn-lg"> 
+            <input type="button" value="Print"
+                onClick="printJS({ printable: 'print-area', type: 'html', targetStyles: ['*']})"
+                class="btn btn-primary btn-lg">
             <div class="page" id="print-area">
                 <h1>Invoice</h1>
                 <div class="row">
                     <div class="col-6 align-left">
                         <img src="assets/images/white-box.png" alt="User Business Logo" class="business-logo">
-                        <div class="upload-button"><p>Upload Image:</p>
-                            <p class="dimensions">Max Width 322px & Max Height 155px</p></div>
+                        <div class="upload-button">
+                            <p>Upload Image:</p>
+                            <p class="dimensions">Max Width 322px & Max Height 155px</p>
+                        </div>
                         <input class="file-upload" type="file" accept="image/*" />
                     </div>
                     <div class="col-6 align-right">
@@ -66,7 +70,8 @@
                 </div>
                 <div class="row">
                     <div class="col-8 align-left">
-                        <p><h5>Bill to:</h5></p>
+                        <h5>Bill to:</h5>
+                        <p></p>
                         <p><textarea name="client-address" cols="50" rows="5"
                                 placeholder="Add CLIENT business contact details"></textarea></p>
                     </div>
@@ -117,29 +122,36 @@
 
                 <div class="row ">
                     <div class="col-12 align-right">
-                        <p>
-                            <h6>Amount Total: £<span id="balance"></span></h6>
-                        </p>
-                        <p><h6>Tax(%): <input type="text" id="tax" size="4" value="20"></h6></p>
-                        <p><h5>Grand Total: £<span id="grand-total"></span></h5></p>
+                        <p></p>
+                        <h6>Amount Total: £<span id="balance"></span></h6>
+                        <p></p>
+                        <h6>Tax(%): <input type="text" id="tax" size="4" value="20"></h6>
+                        <p></p>
+                        <h5>Grand Total: £<span id="grand-total"></span></h5>
+                        <p></p>
                     </div>
                 </div>
 
                 <hr class="block-divider">
                 <div class="row">
                     <div class="col-5 align-left">
-                        <p><h5>Please make payment to:</h5></p>
+                        <p></p>
+                        <h5>Please make payment to:</h5>
+                        <p></p>
                         <textarea name="bank-details" cols="50" rows="7"
                             placeholder="Bank name, sort code and account number or IBAN"></textarea>
                     </div>
                     <div class="col-7 align-right">
-                        <p><h5>Additional Notes:</h5></p>
+                        <p></p>
+                        <h5>Additional Notes:</h5>
+                        <p></p>
                         <textarea name="addtional" cols="50" rows="7" class="textarea-align-right"></textarea>
                     </div>
                 </div>
             </div>
             <hr class="block-divider-trans">
             <p></p>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
