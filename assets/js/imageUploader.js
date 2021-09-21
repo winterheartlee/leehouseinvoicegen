@@ -1,3 +1,5 @@
+/*This code was created by Rusty Bailey https://github.com/rustybailey and can be found at https://jsfiddle.net/rustybailey/2b7dD/ */
+
 $(document).ready(function() {
 
     

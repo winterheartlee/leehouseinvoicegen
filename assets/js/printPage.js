@@ -1,3 +1,4 @@
+/*This code was created by Rodrigo Vieira https://github.com/crabbly and can be found at https://jsfiddle.net/crabbly/gqjqh1gn/ */
 // Print.js
 ! function(e, t) {
     "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.printJS = t() : e.printJS = t()
